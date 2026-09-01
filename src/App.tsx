@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from './component/navbar'
 import Header from './component/header'
-import Card from './component/card'
+import Project from './pages/project'
 
 const App = () => {
   return (
-    <div className='h-screen w-screen text-black  '>
-      <Navbar />
+    <div className='h-screen w-max-content'>
+      {/* <Navbar /> */}
       <Header />
-      <Card />
+      <Project />
     </div>
   )
 }
