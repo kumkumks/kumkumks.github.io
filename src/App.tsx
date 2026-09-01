@@ -6,7 +6,7 @@ import Footer from './component/footer'
 
 const App = () => {
   return (
-    <div className='h-screen w-max-content'>
+    <div className='min-h-screen w-full overflow-x-hidden bg-[#f6f2ff] text-slate-900'>
       {/* <Navbar /> */}
       <Header />
       <Project />

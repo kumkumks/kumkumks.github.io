@@ -27,13 +27,15 @@ const CardData = [
 
 const Project = () => {
     return (
-        <div className='grid grid-cols-2 gap-4 justify-center items-center p-7'>
-            {
-                CardData.map((card) => (
-                    <Card key={card.id} link={card.link} image={card.image} title={card.name} />
-                ))
-            }
-        </div>
+        <section className='mx-auto max-w-7xl px-3 py-6 sm:px-5 md:px-6 lg:px-8'>
+            <div className='grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2'>
+                {
+                    CardData.map((card) => (
+                        <Card key={card.id} link={card.link} image={card.image} title={card.name} />
+                    ))
+                }
+            </div>
+        </section>
     )
 }
 
