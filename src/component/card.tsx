@@ -3,11 +3,13 @@ import React from 'react'
 type cardProps = {
   image: string;
   title: string;
+  link: string;
 }
 
-const Card = ({ image, title }: cardProps) => {
+const Card = ({ image, title, link }: cardProps) => {
   return (
-    <div className='group relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 ease-out hover:-translate-y-1'>
+    <a href={link} className='block'>
+        <div className='group relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 ease-out hover:-translate-y-1'>
       <img
         src={image}
         alt={title}
@@ -26,7 +28,8 @@ const Card = ({ image, title }: cardProps) => {
         <p className='text-lg font-semibold uppercase tracking-[0.18em] text-white'>{title}</p>
         <p className='mt-1 text-xs text-slate-200'>View project</p>
       </div>
-    </div>
+        </div>
+    </a>
   )
 }
 

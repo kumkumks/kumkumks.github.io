@@ -9,16 +9,19 @@ const CardData = [
     id:1,
     name:'sfsbusnest',
     image:img1,
+    link:'https://sfsbusnest.in/',
   },
   {
     id:2,
     name:'Services',
     image:img2,
+    link:'https://services.sfsbusnest.in/',
   },
   {
     id:3,
     name:'Blixtro',
     image:img3,
+    link:'https://blixtro.sfscollege.app/'
   }
 ]
 
@@ -27,7 +30,7 @@ const Project = () => {
         <div className='grid grid-cols-2 gap-4 justify-center items-center p-7'>
             {
                 CardData.map((card) => (
-                    <Card key={card.id} image={card.image} title={card.name} />
+                    <Card key={card.id} link={card.link} image={card.image} title={card.name} />
                 ))
             }
         </div>
