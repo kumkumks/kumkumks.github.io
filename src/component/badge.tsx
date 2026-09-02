@@ -1,6 +1,7 @@
 ﻿import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { motion } from 'motion/react'
 
 const badgeData = [
   {
@@ -34,17 +35,21 @@ const Badge = () => {
         const isLongText = item.name.length > 18
 
         return (
-          <a
+          <motion.a
             key={item.id}
             href={item.link}
             target={isExternalLink && !item.link.startsWith('mailto:') ? '_blank' : undefined}
             rel={isExternalLink && !item.link.startsWith('mailto:') ? 'noreferrer' : undefined}
             className={`flex ${item.style} items-center justify-center gap-2 rounded-full px-3 py-2 text-sm font-semibold transition duration-200 hover:-translate-y-0.5  ${isLongText ? 'text-[11px] sm:text-xs md:text-sm' : ''}`}
             aria-label={item.name}
+            initial={{ opacity: 0, scale: 0.7 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.7 }}
+            transition={{ duration: 0.3 }}
           >
             <FontAwesomeIcon icon={item.icon} className='h-4 w-4 shrink-0' />
             <span className='truncate'>{item.name}</span>
-          </a>
+          </motion.a>
         )
       })}
     </div>

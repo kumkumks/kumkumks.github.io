@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 type cardProps = {
   image: string;
   title: string;
@@ -6,7 +8,9 @@ type cardProps = {
 
 const Card = ({ image, title, link }: cardProps) => {
   return (
-    <a href={link} target='_blank' rel='noreferrer' className='block'>
+    <motion.a 
+     whileInView={{ opacity: [0, 1], y: [20, 0] }}
+    href={link} target='_blank' rel='noreferrer' className='block'>
       <div className='group relative aspect-[4/3] w-full overflow-hidden rounded-2xl transition duration-300 ease-out hover:-translate-y-1'>
         <img
           src={image}
@@ -27,7 +31,7 @@ const Card = ({ image, title, link }: cardProps) => {
           <p className='mt-1 text-xs text-slate-200'>Live Website</p>
         </div>
       </div>
-    </a>
+    </motion.a>
   )
 }
 
