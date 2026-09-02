@@ -7,7 +7,7 @@ type cardProps = {
 const Card = ({ image, title, link }: cardProps) => {
   return (
     <a href={link} target='_blank' rel='noreferrer' className='block'>
-      <div className='group relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 ease-out hover:-translate-y-1'>
+      <div className='group relative aspect-[4/3] w-full overflow-hidden rounded-2xl transition duration-300 ease-out hover:-translate-y-1'>
         <img
           src={image}
           alt={title}

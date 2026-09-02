@@ -8,21 +8,21 @@ const badgeData = [
     name: 'GitHub',
     link: 'https://github.com/kumkumks',
     icon: faGithub,
-    width: 'w-[150px]',
+    style: 'w-[150px] bg-gray-800 text-white hover:bg-[#171515] hover:bg-white/80 hover:text-black hover:translate-y-0.5 ',
   },
   {
     id: 2,
     name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/kumkum--sharma/',
     icon: faLinkedin,
-    width: 'w-[150px]',
+    style: 'w-[150px] bg-blue-700 text-white hover:bg-blue-800 hover:bg-white/80 hover:text-blue-700 hover:translate-y-0.5',
   },
   {
     id: 3,
     name: 'kumkumks671@gmail.com',
     link: 'mailto:kumkumks671@gmail.com',
     icon: faEnvelope,
-    width: 'w-[240px] sm:w-[270px]',
+    style: 'w-[240px] sm:w-[270px] bg-red-600 text-white hover:bg-red-700 hover:bg-white/80 hover:text-red-600 hover:translate-y-0.5',
   },
 ]
 
@@ -39,7 +39,7 @@ const Badge = () => {
             href={item.link}
             target={isExternalLink && !item.link.startsWith('mailto:') ? '_blank' : undefined}
             rel={isExternalLink && !item.link.startsWith('mailto:') ? 'noreferrer' : undefined}
-            className={`flex ${item.width} items-center justify-center gap-2 rounded-full border border-black/10 bg-white/80 px-3 py-2 text-sm font-semibold text-black shadow-sm transition duration-200 hover:-translate-y-0.5 hover:bg-white sm:text-base ${isLongText ? 'text-[11px] sm:text-xs md:text-sm' : ''}`}
+            className={`flex ${item.style} items-center justify-center gap-2 rounded-full px-3 py-2 text-sm font-semibold transition duration-200 hover:-translate-y-0.5  ${isLongText ? 'text-[11px] sm:text-xs md:text-sm' : ''}`}
             aria-label={item.name}
           >
             <FontAwesomeIcon icon={item.icon} className='h-4 w-4 shrink-0' />

@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <header className='w-full'>
-            <div className='mx-auto flex min-h-[70vh] flex-col justify-center bg-radial from-[#4f0164] to-[#6a0cf7] px-5 py-8 sm:px-8 sm:py-8 md:px-10 lg:px-10 sm:min-h-[30vh]'>
+            <div className='mx-auto flex min-h-[50vh] flex-col justify-center bg-radial from-[#4f0164] to-[#6a0cf7] px-5 py-30 sm:px-8 sm:py-8 md:px-15 lg:px-10 sm:min-h-[80vh]'>
                 <div>
                     <h3 className='text-4xl font-italianno text-white/85 sm:text-5xl md:text-5xl lg:text-6xl'>Kumkum Sharma</h3>
                 </div>
