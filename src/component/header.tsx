@@ -1,9 +1,7 @@
-import React from 'react'
-
 const Header = () => {
     return (
         <header className='p-3 sm:p-4 md:p-6'>
-            <div className='mx-auto flex min-h-[80vh] max-w-7xl flex-col justify-center rounded-[28px] bg-radial from-[#4f0164] to-[#6a0cf7] px-5 py-8 sm:px-8 sm:py-10 md:px-10 lg:px-14'>
+            <div className='mx-auto flex min-h-[70vh] max-w-7xl flex-col justify-center rounded-[28px] bg-radial from-[#4f0164] to-[#6a0cf7] px-5 py-8 sm:px-8 sm:py-10 md:px-10 lg:px-14'>
                 <div>
                     <h3 className='text-4xl font-italianno text-white/85 sm:text-5xl md:text-6xl'>Kumkum Sharma</h3>
                 </div>

@@ -1,4 +1,3 @@
-import React from 'react'
 import Card from '../component/card'
 import img1  from '../assets/sfsbusnest.jpeg'
 import img2  from '../assets/service.jpeg'
