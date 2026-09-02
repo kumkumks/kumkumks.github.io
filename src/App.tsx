@@ -5,7 +5,7 @@ import Contact from './component/contact'
 
 const App = () => {
   return (
-    <div className='min-h-screen w-full overflow-x-hidden bg-[#f6f2ff] text-slate-900 '>
+    <div className='min-h-screen w-full overflow-x-hidden bg-[#0b041b] text-slate-900 '>
       {/* <Navbar /> */}
       <Header />
       <Contact />

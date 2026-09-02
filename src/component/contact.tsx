@@ -2,13 +2,15 @@ import Badge from './badge'
 
 const Contact = () => {
   return (
-    <div className='mx-auto flex flex-wrap min-h-[20vh] min-w-5xl rounded-[28px] bg-radial from-[#ff9b74] to-[#ab4313] px-5 py-8 sm:px-8 sm:py-10  md:px-10 lg:px-14'>
-        <div className='flex-1'>
-             <h3 className='text-xl font-semibold text-black sm:text-2xl md:text-3xl'>Where I build, share, and connect.</h3>
-             <p className='text-lg text-gray-700  sm:text-xl md:text-2xl'>Find me around the web.</p>
-        </div>
+    <section className='mx-auto grid w-[min(92vw,75rem)] grid-cols-1 gap-5 rounded-[28px] bg-transparent px-5 py-8 sm:px-8 sm:py-10 md:grid-cols-2 md:items-center md:px-10 lg:px-14'>
+      <div className='min-w-0 w-full'>
+        <h3 className='text-xl font-semibold text-white sm:text-2xl md:text-2xl lg:text-3xl'>Where I build, share, and connect.</h3>
+        <p className='text-lg text-white sm:text-xl md:text-xl lg:text-2xl'>Find me around the web.</p>
+      </div>
+      <div className='w-full'>
         <Badge />
-    </div>
+      </div>
+    </section>
   )
 }
 
